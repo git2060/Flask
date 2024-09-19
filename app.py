@@ -4,19 +4,18 @@ from getpass import getpass
 from string import punctuation
 from passlib.hash import sha256_crypt
 import MySQLdb.cursors
-from datetime import datetimeimport os
+from datetime import datetime
 
 app = Flask(__name__)
 app.secret_key = 'your secret key'
 
-  
+
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'BloodBank'  
 mysql = MySQL(app) 
  
-
 @app.route("/")
 def home():
     return render_template("home.html")
