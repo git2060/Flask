@@ -5,7 +5,6 @@ from string import punctuation
 from passlib.hash import sha256_crypt
 import MySQLdb.cursors
 from datetime import datetimeimport os
-//###@@@@@
 
 app = Flask(__name__)
 app.secret_key = 'your secret key'
