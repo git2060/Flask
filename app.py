@@ -6,6 +6,7 @@ from passlib.hash import sha256_crypt
 import MySQLdb.cursors
 from datetime import datetime
 
+
 app = Flask(__name__)
 app.secret_key = 'your secret key'
   
