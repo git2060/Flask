@@ -15,7 +15,6 @@ app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'BloodBank'  
 mysql = MySQL(app) 
  
-
 @app.route("/")
 def home():
     return render_template("home.html")
