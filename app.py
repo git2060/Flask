@@ -8,7 +8,6 @@ from datetime import datetime
 
 app = Flask(__name__)
 app.secret_key = 'your secret key'
-
   
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
